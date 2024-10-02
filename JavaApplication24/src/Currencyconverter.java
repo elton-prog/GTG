@@ -3,18 +3,18 @@ import java.awt.event.*;
 
 public class Currencyconverter extends Frame implements ActionListener {
      TextField txt1,txt2;
-    Label ossen,adam;
+    Label L1,L2;
+     Button b1,b2,b3,b4,b5,b6,b7,b8,b9;
     Currencyconverter(){
       txt1 = new TextField();
       txt1.setBounds(200,100, 150, 30);
       txt2 = new TextField();
       txt2.setBounds(200, 150, 150, 30);
       txt2.setEditable(false);
-      ossen = new Label("Currency in Ksh:");
-      ossen.setBounds(30,100,100, 40);
-      adam= new Label("Converted Value:");
-      adam.setBounds(30,150,100,40);
-      Button b1, b2, b3, b4, b5, b6, b7, b8, b9;
+      L1 = new Label("Currency in Ksh:");
+      L1.setBounds(30,100,100, 40);
+      L2= new Label("Converted Value:");
+      L2.setBounds(30,150,100,40);
      b1 = new Button("TzSh");
      b1.setBounds(50,200,100,30);
      b2 = new Button("USD");
@@ -53,8 +53,8 @@ public class Currencyconverter extends Frame implements ActionListener {
       add (b9);
       add (txt1);
       add (txt2);
-      add(ossen);
-      add(adam);
+      add(L1);
+      add(L2);
   setSize(750, 650);
   setLayout(null);
   setVisible(true);
@@ -98,7 +98,7 @@ public void actionPerformed(ActionEvent r){
    }
  
     public static void main(String[] args) {
-        new Cconverter();
+        new Currencyconverter();
     }
     
 }
